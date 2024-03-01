@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Metadata } from 'next'
+ 
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -12,6 +13,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
+export const metadata: Metadata = {
+  title: 'ECCD Kids Scheduler',
+  description: 'Sheduling assistant for ECCD Kids',
+}
+
 export default function Home() {
   return (
     <div className="h-screen w-full dark:bg-slate-950 bg-white  dark:bg-grid-white/[0.2] bg-grid-slate-950/[0.2] relative flex items-center justify-center">
@@ -20,7 +26,7 @@ export default function Home() {
       <Card>
         <CardHeader>
           <CardTitle>ECCD Kids Scheduler</CardTitle>
-          <CardDescription>Login to the start scheduling.</CardDescription>
+          <CardDescription>Login to start scheduling.</CardDescription>
         </CardHeader>
         <CardContent>
           <form>
